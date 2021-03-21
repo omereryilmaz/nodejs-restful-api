@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-restful-api",
+  "version": "1.0.0",
+  "description": "RESTful API using Node.js and MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omereryilmaz/nodejs-restful-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omereryilmaz/nodejs-restful-api/issues"
+  },
+  "homepage": "https://github.com/omereryilmaz/nodejs-restful-api#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.2",
+    "mongoose": "^5.11.15"
+  }
+}
