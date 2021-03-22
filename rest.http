@@ -2,27 +2,27 @@
 GET http://localhost:3000/products
 
 ### Get a single product
-GET http://localhost:3000/products/1
+GET http://localhost:3000/products/6055fe468fab643a4c3f2e4
 
 ### Create a product
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "Samsung Note",
-    "price": 2999
+    "name": "iMac",
+    "price": 10000
 }
 
 ### Delete product
-DELETE http://localhost:3000/products/6055fc73612e121c5832fa68
+DELETE http://localhost:3000/products/60563bf327bc5a15f80d0eb9
 
 ### Update product
-PUT http://localhost:3000/products/605251a662a6da2390e9d89c
+PUT http://localhost:3000/products/6058d2825a825301fc35fa3a
 Content-Type: application/json
 
 {
-    "name": "iPad 2",
-    "price": 1999
+    "name": "iMac 2",
+    "price": 11999
 }
 
 

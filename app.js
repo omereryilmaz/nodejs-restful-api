@@ -8,6 +8,8 @@ const ProductRoute = require('./Routes/Product.Route');
 // Initialize DB
 require('./initDB')();
 
+app.use(express.json());
+
 app.get('/', (req, res) => {
     res.send('Welcome to NodeJS API!');
 });
