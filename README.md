@@ -18,3 +18,8 @@ npm start
 ```
 
 You can use [REST Client](https://github.com/Huachao/vscode-restclient) VSCode extension or [Postman](https://www.postman.com/) for api requests.
+
+## To Do List
+- [x] Error handler
+- [ ] Product category (for relational data)
+- [ ] API Authentication - JWT
