@@ -9,8 +9,9 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "iMac",
-    "price": 10000
+    "name": "IPhone X",
+    "price": 7500,
+    "category": "606a086f852ce20d101198f9"
 }
 
 ### Delete product
@@ -25,8 +26,6 @@ Content-Type: application/json
     "price": 11999
 }
 
-
-
 ###
 GET http://localhost:3000/asd
 
@@ -37,3 +36,23 @@ Content-Type: application/json
     "name": "iPad",
     "price": 999
 }
+
+
+// Category
+
+### Get all categories
+GET http://localhost:3000/categories
+
+### Get a single category
+GET http://localhost:3000/categories/6055fe468fab643a4c3f2e4b
+
+### Create a category
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "name": "Tablet"
+}
+
+### Get all products
+GET http://localhost:3000/products/category/606a082a852ce20d101198f8
