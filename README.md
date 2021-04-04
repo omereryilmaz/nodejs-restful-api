@@ -21,5 +21,5 @@ You can use [REST Client](https://github.com/Huachao/vscode-restclient) VSCode e
 
 ## To Do List
 - [x] Error handler
-- [ ] Product category (for relational data)
+- [x] Product category (for relational data)
 - [ ] API Authentication - JWT
