@@ -56,3 +56,15 @@ Content-Type: application/json
 
 ### Get all products
 GET http://localhost:3000/products/category/606a082a852ce20d101198f8
+
+
+### User
+// Register User
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "name": "Omer",
+    "mail": "omer@mail.com",
+    "password": "123"
+}

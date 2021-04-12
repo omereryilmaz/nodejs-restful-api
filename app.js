@@ -6,6 +6,7 @@ require('dotenv').config();
 // Routes
 const ProductRoute = require('./Routes/Product.Route');
 const CategoryRoute = require('./Routes/Category.Route');
+const UserRoute = require('./Routes//User.Route');
 
 // Initialize DB
 require('./initDB')();
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
 
 app.use('/products', ProductRoute);
 app.use('/categories', CategoryRoute);
+app.use('/users', UserRoute);
 
 // 404 handler and pass error handler
 app.use((req, res, next) => {
