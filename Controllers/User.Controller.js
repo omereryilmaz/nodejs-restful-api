@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const createError = require('http-errors');
 const cryptAsync = require('../Modules/Crypt.Module');
+const tokenModule = require('../Modules/Token.Module');
 
 const ObjectId = require('mongodb').ObjectID;
 
@@ -34,9 +35,11 @@ module.exports = {
             if (result.length > 0) {
                 const isEqualPasswords = await cryptAsync.compareStrSync(req.body.password, result[0].password);
                 if (isEqualPasswords) {
+                    const user = new User(req.body);
                     res.json({
                         isLoginSuccessful: true,
-                        message: 'Login Successful'
+                        message: 'Login Successful',
+                        token: await tokenModule.generateToken(user)
                     })
                 } else {
                     res.json({
