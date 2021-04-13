@@ -58,13 +58,22 @@ Content-Type: application/json
 GET http://localhost:3000/products/category/606a082a852ce20d101198f8
 
 
-### User
-// Register User
-POST http://localhost:3000/users/register
+### Regist User
+POST http://localhost:3000/register
 Content-Type: application/json
 
 {
     "name": "Sam",
     "email": "sam@mail.com",
     "password": "000"
+}
+
+
+### Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "omer@mail.com",
+    "password": "123"
 }
