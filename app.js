@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 
 app.use('/products', ProductRoute);
 app.use('/categories', CategoryRoute);
-app.use('/users', UserRoute);
+app.use('/', UserRoute);
 
 // 404 handler and pass error handler
 app.use((req, res, next) => {

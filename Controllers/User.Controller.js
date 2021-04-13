@@ -27,5 +27,32 @@ module.exports = {
             console.log(error.message);
             next(error);
         }
+    },
+    login: async (req, res, next) => {
+        try {
+            const result = await User.find({email: req.body.email});
+            if (result.length > 0) {
+                const isEqualPasswords = await cryptAsync.compareStrSync(req.body.password, result[0].password);
+                if (isEqualPasswords) {
+                    res.json({
+                        isLoginSuccessful: true,
+                        message: 'Login Successful'
+                    })
+                } else {
+                    res.json({
+                        isLoginSuccessful: false,
+                        message: 'Mail or password is incorrect.'
+                    })
+                }
+            } else {
+                res.json({
+                    isLoginSuccessful: false,
+                    message: 'Mail or password is incorrect.'
+                })
+            }
+        } catch (error) {
+            console.log(error.message);
+            next(error);
+        }
     }
 };
