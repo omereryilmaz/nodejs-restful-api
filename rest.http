@@ -1,15 +1,19 @@
 ### Get all products
 GET http://localhost:3000/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwNzVjNzM3MmNjYmZkMTkyODg3OTkxMSIsImVtYWlsIjoic2FtQG1haWwuY29tIiwicGFzc3dvcmQiOiIwMDAiLCJjcmVhdGVkRGF0ZSI6IjIwMjEtMDQtMTNUMTY6MzA6NDcuNTM2WiJ9LCJpYXQiOjE2MTgzMzE0NDcsImV4cCI6MTYxODUwNDI0N30.h_aPnhhtaoHWP7TTTPfSUGA59eXNqrR83jRti1V3mBk
 
 ### Get a single product
 GET http://localhost:3000/products/6055fe468fab643a4c3f2e4b
+Content-Type: application/json
+Authorization: Bearer 123
 
 ### Create a product
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name": "IPhone X",
+    "name": "IPhone asd",
     "price": 7500,
     "category": "606a086f852ce20d101198f9"
 }
@@ -58,7 +62,7 @@ Content-Type: application/json
 GET http://localhost:3000/products/category/606a082a852ce20d101198f8
 
 
-### Regist User
+### Register User
 POST http://localhost:3000/register
 Content-Type: application/json
 
@@ -74,6 +78,6 @@ POST http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "email": "omer@mail.com",
-    "password": "123"
+    "email": "sam@mail.com",
+    "password": "000"
 }

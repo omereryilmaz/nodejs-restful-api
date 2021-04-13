@@ -8,6 +8,9 @@ const ProductRoute = require('./Routes/Product.Route');
 const CategoryRoute = require('./Routes/Category.Route');
 const UserRoute = require('./Routes//User.Route');
 
+// Verify Token 
+const { verifyToken } = require('./Modules/Token.Module')
+
 // Initialize DB
 require('./initDB')();
 
@@ -17,8 +20,8 @@ app.get('/', (req, res) => {
     res.send('Welcome to NodeJS API!');
 });
 
-app.use('/products', ProductRoute);
-app.use('/categories', CategoryRoute);
+app.use('/products', verifyToken, ProductRoute);
+app.use('/categories', verifyToken, CategoryRoute);
 app.use('/', UserRoute);
 
 // 404 handler and pass error handler
