@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/omereryilmaz/nodejs-restful-api#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "http-errors": "^1.7.2",
