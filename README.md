@@ -1,5 +1,5 @@
 # RESTful API using Node.js and MongoDB
-This API project has been made for to learn how Node.js and MongoDB work together. And also has been used MVC design pattern.
+This API project has been made for to learn how Node.js and MongoDB work together. And also has been used MVC architecture pattern.
 
 ## Installation
 
