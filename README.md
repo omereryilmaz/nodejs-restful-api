@@ -8,7 +8,20 @@ Use the package manager [npm](https://www.npmjs.com) to install dependencies. In
 ```bash
 npm install
 ```
- 
+
+## .env File Content
+The content of the `.env` file is as follows:
+
+```text
+PORT=<Port Number>
+MONGODB_URL=<Mongo DB URL>
+DB_NAME=<Database Name>
+CRYPT_SALTROUNDS=<Salt Round>
+CRYPT_PREFIX=<Prefix>
+TOKEN_SECRETKEY=<Secret Key>
+```
+
+
 ## Usage
 
 To run the project:
